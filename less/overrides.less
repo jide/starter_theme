@@ -13,15 +13,6 @@
           box-shadow: @shadow;
 }
 
-#block-search-form {
-  width: 200px;
-  float: none;
-
-  .form-actions {
-    .element-invisible;
-  }
-}
-
 html {
   &.overlay-open .navbar-fixed-top {
     z-index: 400;
@@ -117,6 +108,14 @@ body {
   }
 }
 
+.navbar .block-menu > ul,
+.navbar .block-menu-block > .menu-block-wrapper > ul,
+.navbar .language-switcher-locale-url {
+  .nav;
+  .navbar-nav;
+  .navbar-default .navbar-nav;
+}
+
 // Adjust z-index of core components.
 #overlay-container,
 .overlay-modal-background,
@@ -199,18 +198,9 @@ p:last-child {
 }
 
 // Search form.
-form#search-block-form {
-  margin: 0;
-}
-.navbar #block-search-form {
-  float: none;
-  margin: 5px 0 5px 5px;
-  @media @normal {
-    float: right;
-  }
-}
-.navbar-search .control-group {
-  margin-bottom:0px;
+.navbar .form-search {
+  .navbar-form;
+  .pull-right;
 }
 
 // Action Links

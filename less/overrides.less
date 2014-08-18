@@ -28,6 +28,7 @@ html {
     }
   }
 }
+
 body {
   // Fix horizontal scrolling on iOS devices.
   // http://drupal.org/node/1870076
@@ -87,6 +88,13 @@ body {
       line-height: normal;
     }
   }
+}
+
+html body.admin-menu {
+  padding-top: 29px !important;
+}
+html body.admin-menu {
+  margin-top: 0 !important;
 }
 
 // Default navbar.
@@ -293,6 +301,15 @@ table tr.error {
   .help-block, .help-inline {
     color: @text-color;
   }
+}
+
+.label-inline {
+  display: inline-block;
+}
+
+.label-inline,
+.label-above {
+  font-weight: bold;
 }
 
 // Lists

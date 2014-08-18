@@ -46,3 +46,38 @@ scripts[] = 'bootstrap/js/transition.js'
 
 ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Layouts
+;;;;;;;;;;;;;;;;;;;;;
+
+; Layout: Default
+layouts[default][name] = "Default"
+layouts[default][description] = "Default layout."
+layouts[default][template] = "page"
+layouts[default][regions][] = "navigation"
+layouts[default][regions][] = "header"
+layouts[default][regions][] = "highlighted"
+layouts[default][regions][] = "help"
+layouts[default][regions][] = "content"
+layouts[default][regions][] = "sidebar_first"
+layouts[default][regions][] = "sidebar_second"
+layouts[default][regions][] = "footer"
+layouts[default][regions][] = "page_top"
+layouts[default][regions][] = "page_bottom"
+
+; Layout: Frontpage
+layouts[frontpage][name] = "Frontpage"
+layouts[frontpage][description] = "Frontpage."
+layouts[frontpage][template] = "layout-frontpage"
+layouts[frontpage][regions][] = "navigation"
+layouts[frontpage][regions][] = "header"
+layouts[frontpage][regions][] = "highlighted"
+layouts[frontpage][regions][] = "help"
+layouts[frontpage][regions][] = "content"
+layouts[frontpage][regions][] = "sidebar_first"
+layouts[frontpage][regions][] = "sidebar_second"
+layouts[frontpage][regions][] = "footer"
+layouts[frontpage][regions][] = "page_top"
+layouts[frontpage][regions][] = "page_bottom"

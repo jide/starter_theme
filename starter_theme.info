@@ -8,16 +8,17 @@ base theme = bootstrap
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
-regions[highlighted]    = 'Highlighted'
-regions[help]           = 'Help'
-regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
-regions[page_top]       = 'Page top'
-regions[page_bottom]    = 'Page bottom'
+regions[navigation]       = 'Navigation'
+regions[navigation_right] = 'Navigation right'
+regions[header]           = 'Top Bar'
+regions[highlighted]      = 'Highlighted'
+regions[help]             = 'Help'
+regions[content]          = 'Content'
+regions[sidebar_first]    = 'Primary'
+regions[sidebar_second]   = 'Secondary'
+regions[footer]           = 'Footer'
+regions[page_top]         = 'Page top'
+regions[page_bottom]      = 'Page bottom'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -57,6 +58,7 @@ layouts[default][name] = "Default"
 layouts[default][description] = "Default layout."
 layouts[default][template] = "page"
 layouts[default][regions][] = "navigation"
+layouts[default][regions][] = "navigation_right"
 layouts[default][regions][] = "header"
 layouts[default][regions][] = "highlighted"
 layouts[default][regions][] = "help"
@@ -71,6 +73,7 @@ layouts[default][regions][] = "page_bottom"
 layouts[frontpage][name] = "Frontpage"
 layouts[frontpage][description] = "Frontpage."
 layouts[frontpage][template] = "layout-frontpage"
+layouts[frontpage][regions][] = "navigation_right"
 layouts[frontpage][regions][] = "navigation"
 layouts[frontpage][regions][] = "header"
 layouts[frontpage][regions][] = "highlighted"

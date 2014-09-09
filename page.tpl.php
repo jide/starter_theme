@@ -86,7 +86,6 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -126,14 +125,14 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
+  </header>
 
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
+      </aside>
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
@@ -163,7 +162,7 @@
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
+      </aside>
     <?php endif; ?>
 
   </div>

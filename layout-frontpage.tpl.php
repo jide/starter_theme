@@ -86,7 +86,6 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
-      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -126,16 +125,9 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
+  </header>
 
   <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
     <section<?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
@@ -159,13 +151,18 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
     </section>
+  </div>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
+  <div class="row">
+    <aside class="col-sm-4" role="complementary">
+      <?php print render($page['after_first']); ?>
+    </aside>
+    <aside class="col-sm-4" role="complementary">
+      <?php print render($page['after_second']); ?>
+    </aside>
+    <aside class="col-sm-4" role="complementary">
+      <?php print render($page['after_third']); ?>
+    </aside>
   </div>
 </div>
 <footer class="footer container">
